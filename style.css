@@ -1,8 +1,12 @@
 #numPlayersOptions {
-	display: none;
+	display: block;
 }
 
 #startingPosition {
+	display: none;
+}
+
+#markOptions {
 	display: none;
 }
 

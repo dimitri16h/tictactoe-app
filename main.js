@@ -2,12 +2,12 @@
 var numPlayersOptions = document.getElementById("numPlayersOptions");
 var htmlTiles = document.getElementsByClassName("tile");
 var htmlBoard = document.getElementById("board");
+var markOptions = document.getElementById('markOptions');
 
 //Logic Variables
 var playerSign = ["X", "O"];
 var currentPlayer = 0;
 var board = [];
-var gameIsRunning = false;
 
 document.onreadystatechange = function() {
 	if (document.readyState == "interactive") {
@@ -27,8 +27,21 @@ document.onreadystatechange = function() {
 function optionsLogic(evt) {
 	var option = evt.target.id;
 	console.log("You selected an option! " + option);
-	numPlayersOptions.style.display = 'none';
-
+	// numPlayersOptions.style.display = 'none';
+	if (option == "1player") {
+		return null;
+		// TODO make 1 player version
+	}
+	if (option == "2player") {
+		setMarks();
+	}
+	if (option == "xMark") {
+		startGame();
+	}
+	if (option == "oMark") {
+		currentPlayer = 1;
+		startGame();
+	}
 }
 
 function tileLogic(evt) {
@@ -83,16 +96,12 @@ function checkForWin() {
 	}
 }
 
+function setMarks() {
+	numPlayersOptions.style.display = "none";
+	markOptions.style.display = "block";
+}
+
 function startGame(){
-	gameIsRunning = true;
+	markOptions.style.display = "none";
  	htmlBoard.style.display = "block";
-}
-
-function startOptions(){
-
-}
-
-function chooseNumOfPlayers() {
-	numPlayersOptions.style.display = 'block';
-
 }
