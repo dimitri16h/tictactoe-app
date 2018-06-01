@@ -2,6 +2,10 @@
 	display: none;
 }
 
-.board {
-	display:block;
+#startingPosition {
+	display: none;
+}
+
+#board {
+	display: none;
 }
