@@ -14,6 +14,10 @@
 	display: none;
 }
 
+h6 {
+	display: inline;
+}
+
 .row {
 	min-width: 400px;
 }
