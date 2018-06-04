@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dimitri16h/tictactoe-app/issues"
   },
-  "homepage": "https://github.com/dimitri16h/tictactoe-app#readme"
+  "homepage": "https://github.com/dimitri16h/tictactoe-app#readme",
+  "devDependencies": {
+    "express": "^4.16.3"
+  }
 }
