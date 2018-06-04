@@ -1,0 +1,19 @@
+{
+  "name": "tictactoe-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitri16h/tictactoe-app.git"
+  },
+  "author": "Dimitri Hassan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimitri16h/tictactoe-app/issues"
+  },
+  "homepage": "https://github.com/dimitri16h/tictactoe-app#readme"
+}
