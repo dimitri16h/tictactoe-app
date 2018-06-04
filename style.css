@@ -13,3 +13,19 @@
 #board {
 	display: none;
 }
+
+.row {
+	min-width: 400px;
+}
+
+.tile {
+	height: 100px;
+	width: 100px;
+	font-size: 75px;
+	margin: 5px;
+	border:0px solid transparent;
+}
+
+.btn-group{
+	background-color: black;
+}
